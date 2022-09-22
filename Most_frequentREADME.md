@@ -5,7 +5,7 @@ def fun(y):
         dictionary[letter] = 1 + dictionary.get(letter, 0)
     return dictionary
 def most_frequent(string):
-    letters = [letter.lower() for letter in text if letter.isalpha()]
+    letters = [letter.lower() for letter in string if letter.isalpha()]
     dictionary = fun(letters)
     result = []
     for key in dictionary:
